@@ -81,7 +81,7 @@ li {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  z-index: -1
+  z-index: -1;
 }
 
 .nav {
@@ -99,7 +99,7 @@ li {
 }
 
 .nav.fix-nav .logo h1 span {
-  color: #fff
+  color: #fff;
 }
 
 .navigation {
@@ -110,7 +110,7 @@ li {
 
 .logo h1 {
   font-size: 2.5rem;
-  color: #fff;
+  color: black;
 }
 
 .logo h1 span {
@@ -143,6 +143,7 @@ li {
 .top-nav {
   display: none;
 }
+
 
 @media only screen and (max-width: 768px) {
   .menu {
@@ -179,7 +180,7 @@ li {
   .hamburger,
   .top-nav .close {
     display: block;
-    color: #fff;
+    color: black;
     font-size: 2.3rem;
     padding: .5rem;
     cursor: pointer;
@@ -198,6 +199,7 @@ li {
     align-items: flex-start;
     padding: 1rem 1.6rem;
   }
+  
 
   body.show::before {
     content: '';
@@ -313,12 +315,15 @@ li {
   }
 
 }
-
+.fa-github,.fa-codepen{
+  color: white;
+  font-size: 3rem;
+}
 .icons {
   position: absolute;
   bottom: 5%;
   right: 10%;
-  color: #fff
+  color: #fff;
 }
 
 .icons span:not(:last-child) {
@@ -416,7 +421,9 @@ li {
 .control .colors span:nth-child(4) {
   background-color: var(--cyan);
 }
-
+.menu .nav-list .nav-item>*{
+  font-weight: 700;
+}
 
 /* About */
 
@@ -434,6 +441,7 @@ li {
   grid-template-columns: 1.3fr 1fr;
   gap: 3rem 5rem;
 }
+
 
 .title {
   margin: 4rem 0 7rem 0;
@@ -469,10 +477,13 @@ li {
   margin-bottom: 2rem;
 }
 
-.right p {
+.right .about-me {
   line-height: 2;
   margin-bottom: 2rem;
   color: #333;
+}
+.right .about-me ul li{
+  list-style-type: square;
 }
 
 .right h1 span {
@@ -584,7 +595,13 @@ a.btn:active,
   background-color: var(--customColor);
 }
 
+.services-center .service .fa-video{
+  color: rgb(81, 191, 224);
+}
 
+.services-center .service a{
+  color: rgb(81, 191, 224);
+}
 .service:hover span {
   color: #fff;
 }
@@ -630,9 +647,17 @@ a.btn:active,
   width: 75%;
 }
 
-.skills-box .mongodb {
-  width: 95%;
+.skills-box .java {
+  width: 85%;
 }
+
+.skills-box .dsandalgo {
+  width: 90%;
+}
+.skills-box .react {
+  width: 85%;
+}
+
 
 .skills-box span {
   position: absolute;
@@ -650,9 +675,18 @@ a.btn:active,
 .right h3 {
   margin-bottom: 1rem;
 }
+.right .creative-skills {
+  padding-left: 2rem;
+}
 
+.right .creative-skills ul li{
+  list-style-type: square;
+  color: var(--customColor);
+}
 .right p {
+  margin-top: 2rem;
   margin-bottom: 2rem;
+  
 }
 
 @media only screen and (max-width: 768px) {
